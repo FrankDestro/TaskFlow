@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: TaskFlow
+  jpa:
+    open-in-view: false
+  output:
+    ansi:
+      enabled: ALWAYS
+  profiles:
+    active: ${APP_PROFILE:test}
+  server:
+    port: 8080
+  cors:
+    origins: ${CORS_ORIGINS:http://localhost:5173,http://localhost:5174,http://192.168.18.128:5173}
+  banner:
+    charset: 'UTF-8'
+    location: classpath:static/banner.txt
+
+security:
+  client-id: ${CLIENT_ID:taskflowid}
+  client-secret: ${CLIENT_SECRET:taskflowpassword}
+  jwt:
+    duration: ${JWT_DURATION:86400}
+
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: refresh, health, info, metrics, prometheus, h2-console
+  endpoint:
+    refresh:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
+    info:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
