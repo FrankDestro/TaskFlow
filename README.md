@@ -14,17 +14,17 @@ Esta é uma API RESTful desenvolvida com Spring Boot para gerenciar pessoas e ta
 
 
 ## Tecnologias : 
-Java 21 LTS
-Spring Boot  3.3.2 
-Lombok
-Spring Data JPA
-H2 DataBase 
-PostgreSQL 16
-Swagger (Springdoc OpenAPI)
-Junit 5 (Teste Unitários)
-Jacoco (Cobertura de teste)
-Docker compose 
-Pgadmin 4
+-**Java 21 LTS
+-**Spring Boot  3.3.2 
+-**Lombok
+-**Spring Data JPA
+-**H2 DataBase 
+-**PostgreSQL 16
+-**Swagger (Springdoc OpenAPI)
+-**Junit 5 (Teste Unitários)
+-**Jacoco (Cobertura de teste)
+-**Docker compose 
+-**Pgadmin 4
 
 
 ## Documentação da API
